@@ -7,7 +7,9 @@ The main HTML page is called index.html.
 
 ## Authors
 [Carlos Dominguez García](https://github.com/carlosdg)
+
 [Daute Rodríguez Rodríguez](https://github.com/alu0100973914)
+
 [Ángel Luis Igareta Herráiz](https://github.com/angeligareta)
 
 ## License
