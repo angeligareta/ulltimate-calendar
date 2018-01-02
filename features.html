@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Ulltimate Calendar </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/index-style.css"></link>
+    <style type="text/css"> html { width: auto;  height: auto; } </style>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+    <!-- Alertify -> http://alertifyjs.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/> <!-- Bootstrap theme -->
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 expand">
+      <div class="row mx-0">
+        <div class="offset-md-2 col-md-8 px-0 bg-white expand">
+
+        <header class="bg-gray py-4 text-center my-0">
+          <img class="d-inline my-0 pb-3" src="img/logo-ull.png" width="80" height="60"></img>
+          <h1 class="text-center text-white m-0 d-inline"> timate Calendar </h1>
+        </header>
+
+        <nav class="navbar navbar-expand-md navbar-expand-lg navbar-dark bg-gray">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ideas.html"> Ideas </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sketching.html"> Sketching </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="uses.html"> Usos </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="features.html"> Características </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item" id="contact-tab">
+                <a class="nav-link" href="#"> Contacto </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+         <!-- CUERPO -->
+         <div class="row mx-0 custom-background">
+            <section class="section offset-1 col-10">
+              <h1 class="text-center mb-4"> Características </h1>
+              <hr/>
+              <img class="img-responsive img-thumbnail offset-3 mt-2 shadow" src="http://richardsonbay.audubon.org/sites/g/files/amh781/f/calendar.png"></img>
+              <ul class="list-group my-5 table-shadow">
+                <li class="list-group-item"> Disponer de un horario personalizado según las asignaturas, turnos y grupos del usuario. </li>
+                <li class="list-group-item"> Disponer de un calendario donde el usuario pueda apuntar tareas personales. </li>
+                <li class="list-group-item"> Actualizar de manera automática el calendario de los usuarios cuando un profesor de una 
+                de sus asignaturas mande una tarea, práctica, examen o modifique la fecha de uno de éstos. </li>
+                <li class="list-group-item"> Mandar una notificación a los usuarios cuando haya un cambio automático en su calendario. </li>
+              </ul>
+            </section>
+         </div>
+         <hr class="mb-5" />
+
+        <footer class="d-inline bg-gray mt-5">
+          <p class="text-center text-white p-2 m-0">Copyright © 2017 Ángel Igareta, Carlos Dominguez y Daute Rodríguez - Todos los derechos reservados </p>
+        </footer>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="javascripts/scripts.js"></script>
+  </body>
+
+</html>

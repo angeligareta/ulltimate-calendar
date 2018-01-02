@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Ulltimate Calendar </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/index-style.css"></link>
+    <style type="text/css"> html { width: auto;  height: auto; } </style>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+    <!-- Alertify -> http://alertifyjs.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/> <!-- Bootstrap theme -->
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 expand">
+      <div class="row mx-0">
+        <div class="offset-md-2 col-md-8 px-0 bg-white expand">
+
+        <header class="bg-gray py-4 text-center my-0">
+          <img class="d-inline my-0 pb-3" src="img/logo-ull.png" width="80" height="60"></img>
+          <h1 class="text-center text-white m-0 d-inline"> timate Calendar </h1>
+        </header>
+
+        <nav class="navbar navbar-expand-md navbar-expand-lg navbar-dark bg-gray">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ideas.html"> Ideas </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sketching.html"> Sketching </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="uses.html"> Usos </a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="features.html"> Características </a>
+            </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item" id="contact-tab">
+                <a class="nav-link" href="#"> Contacto </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+         <!-- CUERPO -->
+         <div class="row mx-0 custom-background">
+            <section class="section offset-1 col-10">
+              <h1 class="text-center mb-4">Sketching</h1>
+              <hr/>
+              <h2 class="text-center mb-4">Casimiro</h2>
+              <table class="table table-responsive table-bordered container table-shadow">
+                  <tr class="row">
+                    <td class="col-6 align-middle">
+                      <img class="img-fluid" src="img/personas/casimiro.jpg"></img>  
+                    </td>
+                    <td class="col-6 align-middle text-justify">
+                      <h4> Con ULLtimate Calendar Casemiro: </h4>
+                      <ul>
+                        <li> Tendrá acceso a un sencillo horario adaptado a sus asignaturas, 
+                        turnos y grupos. Así que si no se lo aprende siempre podrá consultarlo en la aplicación. </li>
+                        <li> No tendrá que preocuparse de apuntar las fechas de tareas tiene que hacer. </li>
+                        <li> Podrá ver todo lo que tiene que hacer sin preocuparse de que falte algo. </li>
+                        <li> Podrá organizarse mejor. </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              <hr/>
+              
+              <h2 class="text-center mb-4">Laura</h2>
+              <table class="table table-responsive table-bordered container table-shadow">
+                <tr class="row">
+                  <td class="col-6 align-middle">
+                    <img class="img-fluid" src="img/personas/laura.jpg"></img>  
+                  </td>
+                  <td class="col-6 align-middle text-justify">
+                    <h3> Con ULLtimate Calendar Laura: </h3>
+                    <ul>
+                      <li> Podrá organizarse mejor y así visitar a sus padres más a menudo y encontrar más tiempo para leer. </li>
+                      <li> No tendrá tantas notas en su móvil al no necesitar apuntar sobre las fechas de prácticas, 
+                      tareas ni exámenes. </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+                
+              <hr/>
+              <h2 class="text-center mb-4">Peter</h2>
+              <table class="table table-responsive table-bordered container table-shadow">
+                <tr class="row">
+                  <td class="col-6 align-middle">
+                    <img class="img-fluid" src="img/personas/peter.jpg"></img>  
+                  </td>
+                  <td class="col-6 align-middle text-justify">
+                    <h3> Con ULLtimate Calendar Peter: </h3>
+                    <ul>
+                      <li> Sabrá qué es lo que tiene que hacer en todo momento aunque no haya entendido al profesor. </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+                
+              <hr/>
+              <h2 class="text-center mb-4">Pepa</h2>
+              <table class="table table-responsive table-bordered container table-shadow">
+                <tr class="row">
+                  <td class="col-6 align-middle">
+                    <img class="img-fluid" src="img/personas/pepa.jpg"></img>  
+                  </td>
+                  <td class="col-6 align-middle text-justify">
+                    <h3> Con ULLtimate Calendar Pepa: </h3>
+                    <ul>
+                      <li> Podrá avisar de manera eficaz a todos sus alumnos cuando tenga que posponer la entrega de una práctica. </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              
+            </section>
+         </div>
+         <hr class="mb-5" />
+
+        <footer class="d-inline bg-gray mt-5">
+          <p class="text-center text-white p-2 m-0">Copyright © 2017 Ángel Igareta, Carlos Dominguez y Daute Rodríguez - Todos los derechos reservados </p>
+        </footer>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="javascripts/scripts.js"></script>
+  </body>
+
+</html>

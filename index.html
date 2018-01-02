@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title> Ulltimate Calendar </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/index-style.css"></link>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+  <!-- Alertify -> http://alertifyjs.com/ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.11.0/alertify.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/> <!-- Bootstrap theme -->
+</head>
+
+<body>
+  <div class="container-fluid p-0 expand">
+    <div class="offset-md-2 col-md-8 px-0 bg-white expand">
+
+      <header class="bg-gray py-4 text-center my-0">
+          <img class="d-inline my-0 pb-3" src="img/logo-ull.png" width="80" height="60"></img>
+          <h1 class="text-center text-white m-0 d-inline"> timate Calendar </h1>
+      </header>
+
+      <nav class="navbar navbar-expand-md navbar-expand-lg navbar-dark bg-gray">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"> Inicio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ideas.html"> Ideas </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sketching.html"> Sketching </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="uses.html"> Usos </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features.html"> Características </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item" id="contact-tab">
+              <a class="nav-link" href="#"> Contacto </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+       <!-- CUERPO -->
+      <div class="text-center mt-5">
+        <h1> El Calendario que te solucionará la vida </h1>
+        <hr class="mt-5"/>
+        <video class="video-border shadow" width="600" height="355" poster="img/thumbnail.png" controls>
+          <source src="video/ULLTimate-Calendar.mp4" type="video/mp4">
+        </video>
+        <hr class="mt-5"/>
+        <h2> Organiza tus eventos </h2>
+        <img class="img-thumbnail shadow" src="img/event.png" width="620" height="340">
+        
+        <hr class="mt-5"/>
+        <h2> Añade nuevos eventos </h2>
+        <img class="img-thumbnail shadow" src="img/add-event.png" width="620" height="340">
+        
+        <hr class="mt-5"/>
+        <h2> Tu Horario siempre a mano </h2>
+        <img class="img-thumbnail shadow mb-5" src="img/horario.png" width="620" height="340">
+      </div>
+      
+      <hr class="mb-5" />
+
+      <footer class="d-inline bg-gray mt-5">
+        <p class="text-center text-white p-2 m-0">Copyright © 2017 Ángel Igareta, Carlos Dominguez y Daute Rodríguez - Todos los derechos reservados </p>
+      </footer>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="javascripts/scripts.js"></script>
+</body>
+
+</html>

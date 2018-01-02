@@ -1,0 +1,55 @@
+html {
+  width: auto;
+  height: auto;
+}
+
+.custom-background {
+    background-image: linear-gradient(130deg, #fff, #eee);
+}
+
+.idea {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: .5rem;
+    box-shadow: 3px 4px 10px -3px #333;
+}
+
+.title {
+    margin: 1rem;
+    text-align: center;
+}
+
+.idea-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.idea-content img {
+    order: -1;
+
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.problem, .solution {
+    flex: 1 1 0;
+
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 900px){
+    .idea-content {
+        flex-direction: row;
+    }
+
+    .idea-content img {
+        order: 0;
+        border-radius: 50%;
+    }
+}

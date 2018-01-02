@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Ulltimate Calendar </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/index-style.css"></link>
+    <style type="text/css"> html { width: auto;  height: auto; } </style>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+    <!-- Alertify -> http://alertifyjs.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/> <!-- Bootstrap theme -->
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 expand">
+      <div class="row mx-0">
+        <div class="offset-md-2 col-md-8 px-0 bg-white expand">
+
+        <header class="bg-gray py-4 text-center my-0">
+          <img class="d-inline my-0 pb-3" src="img/logo-ull.png" width="80" height="60"></img>
+          <h1 class="text-center text-white m-0 d-inline"> timate Calendar </h1>
+        </header>
+
+        <nav class="navbar navbar-expand-md navbar-expand-lg navbar-dark bg-gray">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ideas.html"> Ideas </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="sketching.html"> Sketching </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="uses.html"> Usos </a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="features.html"> Características </a>
+            </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item" id="contact-tab">
+                <a class="nav-link" href="#"> Contacto </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+         <!-- CUERPO -->
+         <div class="row mx-0 custom-background">
+            <section class="section offset-1 col-10">
+              <h1 class="text-center mb-4">Sketching</h1>
+              <hr/>
+              <h2 class="text-center mb-4">Casimiro</h2>
+              <table class="table table-responsive table-bordered container table-shadow">
+                  <tr class="row">
+                    <td class="col-6 align-middle">
+                      <img class="img-fluid" src="img/personas/casimiro.jpg"></img>  
+                    </td>
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Hechos </h3>
+                      <ul>
+                        <li> Estudiante universitario </li>
+                        <li> 19 años </li>
+                        <li> Vive a 10 km de su facultad</li>
+                        <li> Vive en casa de sus padres</li>
+                        <li> Tiene muchas tareas/prácticas cada semana </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="row">
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Conductas </h3>
+                      <ul>
+                        <li>Le cuesta organizarse </li>
+                        <li>Es olvidadizo, a veces ni se acuerda del horario </li>
+                        <li>Intenta apuntar las fechas de entrega de tareas y
+                        prácticas en Google Calendar pero a veces se le olvida 
+                        así que no se puede fiar de que ahí esté todo lo que tiene que hacer </li>
+                        <li>No trabaja bien bajo presión</li>
+                      </ul>
+                    </td>
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Objetivos y necesidades </h3>
+                      <ul>
+                      <li> No tener que preocuparse de apuntar las cosas de clase que tiene que hacer </li>
+                      <li> Ver todo lo que tiene que hacer </li>
+                      <li> Organizarse mejor </li>
+                      <li> Aprenderse el horario</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              
+              <hr/>
+              <h2 class="text-center mb-4">Laura</h2>
+              <table class="table table-responsive table-bordered container table-shadow">
+                  <tr class="row">
+                    <td class="col-6 align-middle">
+                      <img class="img-fluid" src="img/personas/laura.jpg"></img>  
+                    </td>
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Hechos </h3>
+                      <ul>
+                        <li> Estudiante universitaria </li>
+                        <li> 20 años </li>
+                        <li> Es de La Gomera pero estudia en Tenerife </li>
+                        <li> Vive en un piso compartido cerca de su facultad </li>
+                        <li> Tiene muchas tareas/prácticas cada semana </li>
+                        <li> Además de la universidad tiene clases de inglés </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="row">
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Conductas </h3>
+                      <ul>
+                        <li> Le gusta leer </li>
+                        <li> Usa notas en el móvil para llevar un registro de las cosas que tiene que hacer </li>
+                        <li> Cuando tiene muchas notas del móvil le cuesta ver a qué darle prioridad </li>
+                        <li> Apuntar cada cosa le supone una pérdida de tiempo y un riesgo por si se le olvida algo </li>
+                      </ul>
+                    </td>
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Objetivos y necesidades </h3>
+                      <ul>
+                        <li> Disminuir la cantidad de notas en el móvil </li>
+                        <li> No tener que anotar las fechas de cada tarea o práctica de la universidad </li>
+                        <li> No tener que preocuparse de que se le olvide algo por hacer de la universidad </li>
+                        <li> Más tiempo para leer </li>
+                        <li> Organizarse mejor </li>
+                        <li> Visitar a sus padres algunos fines de semana </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+                
+              <hr/>
+              <h2 class="text-center mb-4">Peter</h2>
+              <table class="table table-responsive table-bordered container table-shadow">
+                  <tr class="row">
+                    <td class="col-6 align-middle">
+                      <img class="img-fluid" src="img/personas/peter.jpg"></img>  
+                    </td>
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Hechos </h3>
+                      <ul>
+                        <li> Estudiante universitario de intercambio </li>
+                        <li> 21 años </li>
+                        <li> Vive en un piso compartido con otros estudiantes de intercambio </li>
+                        <li> Es escocés </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="row">
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Conductas </h3>
+                      <ul>
+                        <li> Le cuesta entender el acento canario</li>
+                        <li> Se organiza bien  </li>
+                        <li> No entiende bien a algunos profesores y hay tareas o prácticas que no sabe que hay que entregar </li>
+                      </ul>
+                    </td>
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Objetivos y necesidades </h3>
+                      <ul>
+                        <li> Mejorar su dominio con el idioma </li>
+                        <li> Una lista de las tareas que hay que hacer </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+                
+              <hr/>
+              <h2 class="text-center mb-4">Pepa</h2>
+              <table class="table table-responsive table-bordered container table-shadow">
+                  <tr class="row">
+                    <td class="col-6 align-middle">
+                      <img class="img-fluid" src="img/personas/pepa.jpg"></img>  
+                    </td>
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Hechos </h3>
+                      <ul>
+                        <li> Profesora de universidad </li>
+                        <li> 42 años </li>
+                        <li> Madre de una niña de 7 años </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="row">
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Conductas </h3>
+                      <ul>
+                        <li> Le gusta pasar tiempo con su familia </li>
+                        <li> Tiene que corregir muchas prácticas a la semana </li>
+                        <li> Debido a su trabajo de investigación tiene que viajar muy a menudo </li>
+                        <li> No le gusta mandar correos para avisar a los alumnos porque muchos no lo acaban viendo </li>
+                      </ul>
+                    </td>
+                    <td class="col-6 align-middle text-justify">
+                      <h3> Objetivos y necesidades </h3>
+                      <ul>
+                        <li> Pasar más tiempo con su hija </li>
+                        <li> Avisar a todos sus alumnos cuando ha de posponer la entrega de una práctica </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+                
+            </section>
+         </div>
+         
+         <hr class="mb-5" />
+
+        <footer class="d-inline bg-gray mt-5">
+          <p class="text-center text-white p-2 m-0">Copyright © 2017 Ángel Igareta, Carlos Dominguez y Daute Rodríguez - Todos los derechos reservados </p>
+        </footer>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="javascripts/scripts.js"></script>
+  </body>
+
+</html>

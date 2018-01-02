@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Ulltimate Calendar </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/index-style.css"></link>
+    <link rel="stylesheet" href="stylesheets/ideas.css"></link>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+    <!-- Alertify -> http://alertifyjs.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/> <!-- Bootstrap theme -->
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 expand">
+      <div class="row mx-0">
+        <div class="offset-md-2 col-md-8 px-0 bg-white expand">
+
+        <header class="bg-gray py-4 text-center my-0">
+          <img class="d-inline my-0 pb-3" src="img/logo-ull.png" width="80" height="60"></img>
+          <h1 class="text-center text-white m-0 d-inline"> timate Calendar </h1>
+        </header>
+
+        <nav class="navbar navbar-expand-md navbar-expand-lg navbar-dark bg-gray">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Inicio </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="ideas.html"> Ideas </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sketching.html"> Sketching </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="uses.html"> Usos </a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="features.html"> Características </a>
+            </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item" id="contact-tab">
+                <a class="nav-link" href="#"> Contacto </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+         <!-- CUERPO -->
+         <div class="row mx-0 custom-background">
+           <section class="section">
+              <h2 class="section-title">Ideas</h2>
+              <ul class="idea-list no-select">
+                  <li class="idea">
+                      <h3 class="title">Seguidor de guaguas</h3>
+                      <div class="idea-content">
+                          <p class="problem">
+                              <strong>Problema: </strong>
+                              Ataulfo es un hombre de 30 años sin coche y que, por tanto, tiene que coger la guagua todos los días para ir a trabajar.
+                              Ataulfo, como a muchas otras personas, no le gusta madrugar, por lo que muchas veces se encuentra
+                              con que pierde la guagua por quedarse durmiendo unos minutos de más.
+                          </p>
+                          <img src="img/person-1824144_640.png" alt="Imagen de una persona" />
+                          <p class="solution">
+                              <strong>Solución: </strong>
+                              Un programa que siga en tiempo real las guaguas y que aprenda de los hábitos de los usuarios para poder avisarles a tiempo
+                              de coger la guagua.
+                          </p>
+                      </div>
+                  </li>
+
+                  <li class="idea">
+                      <h3 class="title">Calendario académico</h3>
+                      <div class="idea-content">
+                          <p class="problem">
+                              <strong>Problema: </strong>
+                              Paula es una estudiante de Ingeniería Informática de la Universidad de La Laguna, cada semana tiene nuevas prácticas y tareas
+                              para entregar en un plazo límite, pero tener que actualizar su calendario todos los días supone una
+                              pérdida de tiempo importante. Y si no lo hace podría olvidarse de alguna tarea y organizarse mal.
+                          </p>
+                          <img src="img/person-1824144_640.png" alt="Imagen de una persona" />
+                          <p class="solution">
+                              <strong>Solución: </strong>
+
+                              Hacer un programa a modo de calendario que pueda estar personalizado para cada alumno según sus asignaturas matriculadas
+                              y que, cuando un profesor cree una tarea, práctica u otro evento, se envíe una notificación a la
+                              aplicación y se actualice automáticamente el calendario de los alumnos matriculados en esa asignatura.
+                          </p>
+                      </div>
+                  </li>
+
+                  <li class="idea">
+                      <h3 class="title">Reproductor de música</h3>
+                      <div class="idea-content">
+                          <p class="problem">
+                              <strong>Problema: </strong>
+                              Pablo es un adolescente de 18 años al que le encanta escuchar música. Tiene una cuenta en Spotify pero ahí no puede encontrar
+                              toda la música que le gusta, así que muchas veces tiene que recurrir a YouTube. Pero YouTube no tiene
+                              un sistema como Spotify para crear listas de reproducciones de manera cómoda.
+                          </p>
+                          <img src="img/person-1824144_640.png" alt="asd" />
+                          <p class="solution">
+                              <strong>Solución: </strong>
+
+                              Hacer un programa que permita manejar videos de YouTube como canciones de Spotify.
+                          </p>
+                      </div>
+                  </li>
+              </ul>
+            </section>
+         </div>
+         
+         <hr class="mb-5" />
+
+        <footer class="d-inline bg-gray mt-5">
+          <p class="text-center text-white p-2 m-0">Copyright © 2017 Ángel Igareta, Carlos Dominguez y Daute Rodríguez - Todos los derechos reservados </p>
+        </footer>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="javascripts/scripts.js"></script>
+  </body>
+
+</html>
