@@ -1,15 +1,11 @@
-# Firebase Project
-<h1 align="center">Smart flight comparer considering alternative transportation</h1>
-<h4 align="center">Final project of the Data-Intensive Computing course of the EIT Digital data science master at <a href="https://www.kth.se/en">KTH</a></h4>
+<h1 align="center">ULLtimate Calendar</h1>
+<h4 align="center">Example of landing page using the web technologies HTML, CSS, Javascript, Bootstrap and Firebase.</h4>
 
 <p align="center">
-  <img alt="UPM" src="https://img.shields.io/badge/EIT%20Digital-UPM-blue?style=flat-square">
+  <img alt="ULL" src="https://img.shields.io/badge/University-La%20Laguna-%2354048c?style=flat-square" />  
   <img alt="License" src="https://img.shields.io/github/license/angeligareta/ULLtimate-calendar?style=flat-square" />
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/angeligareta/ULLtimate-calendar?style=flat-square" />
 </p>
-
-
-Example of landing page using the web technologies HTML, CSS, Javascript, Bootstrap and Firebase.
 
 ## Authors
 - [Carlos Dominguez García](https://github.com/carlosdg)
