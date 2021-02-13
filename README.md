@@ -7,6 +7,15 @@
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/angeligareta/ULLtimate-calendar?style=flat-square" />
 </p>
 
+## Website
+The developed website is published in the [project webpage](https://angeligareta.com/ulltimate-calendar/).
+
+## Screenshots
+
+![ulltimate-calendar-1](img/ulltimate-calendar-1.jpg)
+
+![ulltimate-calendar-2](img/ulltimate-calendar-2.jpg)
+
 ## Authors
 - [Carlos Dominguez García](https://github.com/carlosdg)
 - [Daute Rodríguez Rodríguez](https://github.com/DauteRR)
